@@ -51,40 +51,22 @@ import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink
 
 const linksList: EssentialLinkProps[] = [
   {
+    title: 'Typography',
+    caption: 'Types of typography',
+    icon: 'las la-font',
+    link: 'typography',
+  },
+  {
+    title: 'Flex',
+    caption: 'Flex ',
+    icon: 'las la-border-all',
+    link: 'flex',
+  },
+  {
     title: 'Docs',
     caption: 'quasar.dev',
     icon: 'las la-graduation-cap',
     link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'lab la-github',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'lab la-discord',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'lab la-blogger',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'lab la-twitter',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'lab la-facebook',
-    link: 'https://facebook.quasar.dev'
   },
   {
     title: 'Quasar Awesome',
