@@ -25,7 +25,11 @@
       <div class="col-4 bg-secondary"></div>
       <div class="col-4 bg-accent"></div>
     </div>
-
+    <q-separator spaced/>
+    <div class="row q-md-mb justify-between">
+      <div class="col-12 col-sm-6 col-md-4 bg-secondary"></div>
+      <div class="col-12 col-sm-6 col-md-4 bg-accent"></div>
+    </div>
   </q-page>
 </template>
 
