@@ -33,7 +33,7 @@
       </span>
       <q-btn
          color="primary"
-         label="Open side drawer"
+         :label=" uiStore.isLeftDrawerOpen ? 'Close side drawer' : 'Open side drawer' "
          class="q-mt-sm"
          @click="uiStore.toggleLeftDrawer"
       />
