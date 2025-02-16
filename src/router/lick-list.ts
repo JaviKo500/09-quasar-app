@@ -20,6 +20,18 @@ export const linksList: EssentialLinkProps[] = [
       link: 'flex',
    },
    {
+      title: 'Dialogs',
+      caption: 'Dialogs ',
+      icon: 'las la-comment-dots',
+      link: 'dialogs',
+   },
+   {
+      title: 'Forms',
+      caption: 'Forms ',
+      icon: 'lab la-wpforms',
+      link: 'forms',
+   },
+   {
       title: 'Docs',
       caption: 'quasar.dev',
       icon: 'las la-graduation-cap',
@@ -31,10 +43,4 @@ export const linksList: EssentialLinkProps[] = [
       icon: 'lab la-gratipay',
       link: 'https://awesome.quasar.dev'
    },
-   {
-      title: 'Dialogs',
-      caption: 'Dialogs ',
-      icon: 'las la-comment-dots',
-      link: 'dialogs',
-   }
 ];
