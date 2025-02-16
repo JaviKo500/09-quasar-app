@@ -33,7 +33,10 @@
 </template>
 
 <script setup lang="ts">
+import { useQuasar } from 'quasar';
 import { ref } from 'vue';
+
+const $q = useQuasar();
 
 
 const userForm = ref({
@@ -44,15 +47,21 @@ const userForm = ref({
   errorInConditions: false,
 });
 const onSubmit = () => {
-  console.log('<--------------- JK FormsPage --------------->');
-  console.log('userForm.value', userForm.value);
   if (userForm.value.conditions !== true) {
-    console.log('<--------------- JK FormsPage --------------->');
-    console.log('not accepted');
     userForm.value.errorInConditions = true;
+    $q.notify({
+      color: 'red-5',
+      textColor: 'white',
+      icon: 'las la-exclamation',
+      message: 'You need to accept the license and terms first'
+    });
   } else {
-    console.log('<--------------- JK FormsPage --------------->');
-    console.log('accepted');
+    $q.notify({
+      color: 'green-4',
+      textColor: 'white',
+      icon: 'las la-check-circle',
+      message: 'Submitted'
+    });
   }
 };
 
