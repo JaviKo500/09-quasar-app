@@ -30,5 +30,11 @@ export const linksList: EssentialLinkProps[] = [
       caption: 'Community Quasar projects',
       icon: 'lab la-gratipay',
       link: 'https://awesome.quasar.dev'
+   },
+   {
+      title: 'Dialogs',
+      caption: 'Dialogs ',
+      icon: 'las la-comment-dots',
+      link: 'dialogs',
    }
 ];
