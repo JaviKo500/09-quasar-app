@@ -19,14 +19,8 @@
 </template>
 
 <script setup lang="ts">
+import { type EssentialLinkProps } from 'src/router/lick-list';
 import { useRouter } from 'vue-router';
-
-export interface EssentialLinkProps {
-  title: string;
-  caption?: string;
-  link?: string;
-  icon?: string;
-};
 
 const router = useRouter();
 const props = withDefaults(defineProps<EssentialLinkProps>(), {

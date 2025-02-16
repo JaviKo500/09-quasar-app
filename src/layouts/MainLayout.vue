@@ -47,34 +47,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink.vue';
-
-const linksList: EssentialLinkProps[] = [
-  {
-    title: 'Typography',
-    caption: 'Types of typography',
-    icon: 'las la-font',
-    link: 'typography',
-  },
-  {
-    title: 'Flex',
-    caption: 'Flex ',
-    icon: 'las la-border-all',
-    link: 'flex',
-  },
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'las la-graduation-cap',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'lab la-gratipay',
-    link: 'https://awesome.quasar.dev'
-  }
-];
+import EssentialLink from 'components/EssentialLink.vue';
+import { linksList } from 'src/router/lick-list';
 
 const leftDrawerOpen = ref(false);
 
