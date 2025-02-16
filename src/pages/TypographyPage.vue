@@ -31,8 +31,15 @@
       <span class="text-weight-bolder">
          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       </span>
+      <q-btn
+         color="primary"
+         label="Open side drawer"
+         class="q-mt-sm"
+         @click="uiStore.toggleLeftDrawer"
+      />
    </q-page>
 </template>
 <script setup lang="ts">
-   
+import { useUiStore } from '../stores/ui-store';
+const uiStore = useUiStore();
 </script>
